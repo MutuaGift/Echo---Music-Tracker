@@ -1,6 +1,4 @@
-Here is that same text, but formatted cleanly with proper Markdown. This will look perfectly organized when you paste it into your `README.md` file on GitHub.
-
------
+ -----
 
 # Echo - Music Tracker
 
