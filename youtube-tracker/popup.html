@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Echo Tracker</title>
+  <style>
+    body { 
+      width: 280px;
+      background: #0f0f23;
+      color: #ffffff;
+      font-family: 'Inter', sans-serif;
+      margin: 0;
+      padding: 0;
+    }
+    
+    .container {
+      padding: 20px;
+    }
+    
+    .header {
+      text-align: center;
+      margin-bottom: 20px;
+    }
+    
+    .logo {
+      font-size: 1.3rem;
+      font-weight: 700;
+      color: #6366f1;
+      margin-bottom: 8px;
+    }
+    
+    .tagline {
+      font-size: 0.8rem;
+      color: #a5a5c5;
+    }
+    
+    /* Stats Section - ADDED BACK */
+    .stats {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 10px;
+      margin: 15px 0;
+    }
+    
+    .stat {
+      text-align: center;
+      padding: 10px;
+      background: rgba(255, 255, 255, 0.03);
+      border-radius: 8px;
+      border: 1px solid #2d2d4d;
+    }
+    
+    .stat-number {
+      font-size: 1.2rem;
+      font-weight: 700;
+      color: #6366f1;
+    }
+    
+    .stat-label {
+      font-size: 0.7rem;
+      color: #a5a5c5;
+    }
+    
+    .button {
+      width: 100%;
+      padding: 12px;
+      margin: 6px 0;
+      background: #6366f1;
+      color: white;
+      border: none;
+      border-radius: 8px;
+      font-weight: 600;
+      cursor: pointer;
+    }
+    
+    .button:hover {
+      background: #4f46e5;
+    }
+    
+    .button.secondary {
+      background: #1a1a2e;
+      color: #ffffff;
+    }
+    
+    .status {
+      font-size: 0.8rem;
+      text-align: center;
+      margin-top: 15px;
+      padding: 10px;
+      border-radius: 8px;
+      background: rgba(255, 255, 255, 0.05);
+    }
+    
+    .footer {
+      text-align: center;
+      margin-top: 15px;
+      padding-top: 15px;
+      border-top: 1px solid #2d2d4d;
+      color: #6b6b8a;
+      font-size: 0.7rem;
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <div class="header">
+      <div class="logo">Echo</div>
+      <div class="tagline">Track Your Music</div>
+    </div>
+    
+    <!-- Stats Section - ADDED BACK -->
+    <div class="stats">
+      <div class="stat">
+        <div class="stat-number" id="trackCount">0</div>
+        <div class="stat-label">Tracks</div>
+      </div>
+      <div class="stat">
+        <div class="stat-number" id="playCount">0</div>
+        <div class="stat-label">Plays</div>
+      </div>
+    </div>
+    
+    <button id="syncData" class="button">Sync to Dashboard</button>
+    <button id="exportData" class="button secondary">Export Data</button>
+    <button id="clearData" class="button secondary">Clear Data</button>
+    
+    <div id="status" class="status">Ready to track</div>
+    
+    <div class="footer">
+      Created by Liwu
+    </div>
+  </div>
+
+  <script src="popup.js"></script>
+</body>
+</html>
