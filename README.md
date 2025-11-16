@@ -1,75 +1,75 @@
-Echo - Music Tracker
+Here is that same text, but formatted cleanly with proper Markdown. This will look perfectly organized when you paste it into your `README.md` file on GitHub.
+
+-----
+
+# Echo - Music Tracker
+
 Echo is a personal music analytics dashboard that tracks your YouTube listening history and provides beautiful insights into your music habits.
 
-https://img.shields.io/badge/Echo-Music%2520Tracker-blue
-https://img.shields.io/badge/version-1.0.0-green
+[https://img.shields.io/badge/Echo-Music%20Tracker-blue](https://www.google.com/search?q=https://img.shields.io/badge/Echo-Music%2520Tracker-blue) [https://img.shields.io/badge/version-1.0.0-green](https://img.shields.io/badge/version-1.0.0-green)
 
-🎵 Features
-Automatic Tracking: Tracks YouTube videos you watch for more than 30 seconds
+🎵 \#\# Features
 
-Beautiful Dashboard: Modern, dark-themed interface with statistics and analytics
+  * **Automatic Tracking:** Tracks YouTube videos you watch for more than 30 seconds
+  * **Beautiful Dashboard:** Modern, dark-themed interface with statistics and analytics
+  * **Real-time Sync:** Automatically syncs data between extension and dashboard
+  * **Export Data:** Download your listening history as JSON
+  * **Cross-Platform:** Works on Chrome and other Chromium-based browsers
 
-Real-time Sync: Automatically syncs data between extension and dashboard
+📊 \#\# What Echo Tracks
 
-Export Data: Download your listening history as JSON
+  * Number of times you've played each track
+  * Total watch time per track
+  * Your most played songs
+  * Overall listening statistics
 
-Cross-Platform: Works on Chrome and other Chromium-based browsers
+🚀 \#\# Quick Start
 
-📊 What Echo Tracks
-Number of times you've played each track
+### Prerequisites
 
-Total watch time per track
+  * Node.js (v14 or higher)
+  * npm or yarn
+  * Chrome browser
 
-Your most played songs
+### Installation
 
-Overall listening statistics
+**1. Set up the Backend**
 
-🚀 Quick Start
-Prerequisites
-Node.js (v14 or higher)
-
-npm or yarn
-
-Chrome browser
-
-Installation
-Set up the Backend
-
-bash
+```bash
 cd backend
 npm install
 node server.js
-The backend will run on http://localhost:3001
+```
 
-Set up the Frontend
+The backend will run on `http://localhost:3001`
 
-bash
+**2. Set up the Frontend**
+
+```bash
 cd frontend
 npm install
 npm start
-The dashboard will open at http://localhost:3000
+```
 
-Install the Browser Extension
+The dashboard will open at `http://localhost:3000`
 
-Open Chrome and go to chrome://extensions/
+**3. Install the Browser Extension**
 
-Enable "Developer mode"
+1.  Open Chrome and go to `chrome://extensions/`
+2.  Enable "Developer mode"
+3.  Click "Load unpacked" and select the `youtube-tracker` folder
+4.  The Echo extension will appear in your toolbar
 
-Click "Load unpacked" and select the youtube-tracker folder
+🎮 \#\# How to Use
 
-The Echo extension will appear in your toolbar
+1.  **Start Tracking:** Simply browse YouTube as normal - Echo automatically tracks videos you watch for 30+ seconds
+2.  **Sync Data:** Click the Echo extension icon and click "Sync to Dashboard"
+3.  **View Analytics:** Open `http://localhost:3000` to see your listening statistics
+4.  **Export Data:** Use the "Export Data" button in the extension to download your history
 
-🎮 How to Use
-Start Tracking: Simply browse YouTube as normal - Echo automatically tracks videos you watch for 30+ seconds
+📁 \#\# Project Structure
 
-Sync Data: Click the Echo extension icon and click "Sync to Dashboard"
-
-View Analytics: Open http://localhost:3000 to see your listening statistics
-
-Export Data: Use the "Export Data" button in the extension to download your history
-
-📁 Project Structure
-text
+```text
 echo-music-tracker/
 ├── backend/
 │   ├── server.js
@@ -88,29 +88,27 @@ echo-music-tracker/
     ├── popup.html
     ├── popup.js
     └── icons/
-🔧 Technical Details
-Frontend: React.js with modern CSS
+```
 
-Backend: Node.js with Express
+🔧 \#\# Technical Details
 
-Extension: Chrome Extension Manifest V3
+  * **Frontend:** React.js with modern CSS
+  * **Backend:** Node.js with Express
+  * **Extension:** Chrome Extension Manifest V3
+  * **Storage:** Chrome local storage (extension) + in-memory storage (backend)
 
-Storage: Chrome local storage (extension) + in-memory storage (backend)
+### Backend API Endpoints
 
-🛠️ Development
-Backend API Endpoints
-POST /api/youtube-data - Receive data from extension
+  * `POST /api/youtube-data` - Receive data from extension
+  * `GET /api/youtube-data` - Send data to frontend
 
-GET /api/youtube-data - Send data to frontend
+### Extension Components
 
-Extension Components
-content.js - Tracks YouTube video plays
+  * `content.js` - Tracks YouTube video plays
+  * `background.js` - Monitors tab updates
+  * `popup.js` - Extension popup interface
 
-background.js - Monitors tab updates
-
-popup.js - Extension popup interface
-
-👨‍💻 Created By
+👨‍💻 \#\# Created By
 MutuaGift
 
-Note: Echo only tracks data locally and doesn't send any information to external servers. Your listening history remains private and under your control.
+> Note: Echo only tracks data locally and doesn't send any information to external servers. Your listening history remains private and under your control.
